@@ -1,8 +1,7 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[11pt,a4paper,sans]{moderncv}
 
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
-\usepackage[default]{sourcesanspro}
 \usepackage[T1]{fontenc}
 \usepackage[francais]{babel}
 \usepackage{geometry}
@@ -10,6 +9,12 @@
 % Configure page margins with geometry
 \geometry{left=1.5cm, top=1cm, right=1.5cm, bottom=1cm, footskip=.5cm}
 
+% custom fonts for header 
+\renewcommand*{\namefont}{\fontsize{45}{45}\mdseries\upshape}
+\renewcommand*{\titlefont}{\fontsize{25}{25}\mdseries\upshape}
+\renewcommand*{\addressfont}{\fontsize{10}{12}\mdseries\itshape}
+
+% infos
 \firstname{Gaël}
 \familyname{Foppolo}  
 \title{Software Engineer}         
@@ -21,11 +26,7 @@
 \social[linkedin]{gaelfoppolo} 
 \social[twitter]{gaelugio} 
 \extrainfo{20 ans -- Permis B}
-\photo[75pt][0pt]{ressources/photo}
-
-\renewcommand*{\namefont}{\fontsize{45}{45}\mdseries\upshape}
-\renewcommand*{\titlefont}{\fontsize{25}{25}\mdseries\upshape}
-\renewcommand*{\addressfont}{\fontsize{10}{12}\mdseries\upshape}
+\photo[90pt][0pt]{ressources/photo}	
 
 \begin{document}
 
