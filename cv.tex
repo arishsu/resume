@@ -10,6 +10,7 @@
 \usepackage{multicol}
 \usepackage{fontawesome}
 \moderncvicons{awesome}
+\usepackage{tikz}
 
 % Configure page margins with geometry
 \geometry{left=1.5cm, top=0.75cm, right=1.5cm, bottom=0.75cm, footskip=.5cm}
@@ -39,7 +40,7 @@
 \social[linkedin]{gaelfoppolo} 
 \social[twitter]{gaelugio} 
 \extrainfo{20 ans -- Permis B}
-\photo[93pt][0pt]{ressources/photo}	
+\photo[95pt][0pt]{ressources/avatar_nobg}	
 
 \begin{document}
 
@@ -102,24 +103,55 @@
   \begin{multicols}{3}
     \centering{\textbf{Environnement\\}}
     \vspace*{2mm}
-    \centering{Linux~~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
-        \centering{iOS/OS X~~\textsc{\faStar~\faStar~\faStar~\faStar~\faStarO}}\\
+    \centering{UNIX~~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
+        \centering{OS X/iOS~~\textsc{\faStar~\faStar~\faStar~\faStar~\faStarO}\\}
     \centering{Windows~~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
     \columnbreak
     \centering{\textbf{Langages \\}}
     \vspace*{2mm}
     \centering{Swift~~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
     \centering{Java/C~~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
-    \centering{PHP/SQL~~\textsc{\faStar~\faStar~\faStar}}\\
+    \centering{PHP/SQL~~\textsc{\faStar~\faStar~\faStar}\\}
     \columnbreak
     \centering{\textbf{Outils \\}}
     \vspace*{2mm}
     \centering{UML~~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
     \centering{Git~~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
-    \centering{\LaTeX~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}}\\
+    \centering{\LaTeX~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
   \end{multicols}
 \end{minipage}
 
-\section{\faEmpire~Autres}
+\section{\faBeer~Intérêts}
+
+\vspace*{1mm}
+
+\tikzset{
+    cercle/.pic={
+      \node [draw, thick, circle, minimum width=10pt] {\tikzpictext};
+    },
+  }
+%\hspace*{\fill}
+\begin{minipage}{\maincolumnwidth}
+  \begin{tikzpicture}
+  	\pic [pic text={\huge \faCoffee}] {cercle};
+    \node[draw=none] at (0,-1.1) {Café};
+    \pic [pic text={\huge \faTelevision}] at (20mm,0) {cercle};
+    \node[draw=none] at (2,-1.1) {Séries};
+    \pic [pic text={\huge \faHeadphones}] at (40mm,0) {cercle};
+    \node[draw=none] at (4,-1.1) {Musique};
+    \pic [pic text={\huge \faLeaf}] at (60mm,0) {cercle};
+    \node[draw=none] at (6,-1.1) {Jardinage};
+    \pic [pic text={\huge \faApple}] at (80mm,0) {cercle};
+    \node[draw=none] at (8,-1.1) {Apple};
+    \pic [pic text={\huge \faGamepad}] at (100mm,0) {cercle};
+    \node[draw=none] at (10,-1.1) {Jeux vidéo};
+    \pic [pic text={\huge \faFirefox}] at (120mm,0) {cercle};
+    \node[draw=none] at (12,-1.1) {Firefox};
+    \pic [pic text={\huge \faSunO}] at (140mm,0) {cercle};
+    \node[draw=none] at (14,-1.1) {Soleil};
+    \pic [pic text={\huge \faRebel}] at (160mm,0) {cercle};
+    \node[draw=none] at (16,-1.1) {Star Wars};
+  \end{tikzpicture}
+\end{minipage}
 
 \end{document}
