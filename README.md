@@ -1,7 +1,7 @@
 
 Here my LaTEX resume, based on modercv template.
 
-Available under **GNU GPLv3**, see [LICENCE.md](https://raw.githubusercontent.com/gaelfoppolo/resume/master/LICENCE.md)
+Available under **GNU GPLv3**, see [LICENCE.md](https://github.com/gaelfoppolo/resume/blob/master/LICENCE.md)
 
 You can [see](https://github.com/gaelfoppolo/resume/blob/master/cv.pdf) or [download](https://github.com/gaelfoppolo/resume/raw/master/cv.pdf) PDF.
 
