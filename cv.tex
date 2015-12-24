@@ -3,11 +3,13 @@
 \moderncvtheme[blue]{classic}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[francais]{babel}
+% last language in the list is the one used in the document
+\usepackage[english,francais]{babel}
 \usepackage{geometry}
 \usepackage{moderntimeline}
 \usepackage{multicol}
 \usepackage{fontawesome}
+\moderncvicons{awesome}
 
 % Configure page margins with geometry
 \geometry{left=1.5cm, top=0.75cm, right=1.5cm, bottom=0.75cm, footskip=.5cm}
@@ -29,7 +31,7 @@
 \firstname{Gaël}
 \familyname{Foppolo}  
 \title{Software Engineer}         
-\address{}{13009 -- Marseille}   
+\address{}{\faHome~13009 -- Marseille}   
 \email{me@gaelfoppolo.com}                      
 \homepage{www.gaelfoppolo.com}
 \mobile{+33 6 28 91 02 66}
@@ -37,7 +39,7 @@
 \social[linkedin]{gaelfoppolo} 
 \social[twitter]{gaelugio} 
 \extrainfo{20 ans -- Permis B}
-\photo[90pt][0pt]{ressources/photo}	
+\photo[93pt][0pt]{ressources/photo}	
 
 \begin{document}
 
@@ -67,8 +69,12 @@
 \vspace*{-2mm}
 \section{\faNewspaperO~Publication}
 
+\begin{otherlanguage}{english}
+
 \tldatecventry{2015}{Contextual Sequential Pattern Mining in Games: Rock, Paper, Scissors, Lizard, Spock}{Research and Development in Intelligent Systems XXXII: Incorporating Applications and Innovations in Intelligent Systems XXIII}{Springer}
 {Max Bramer}{}
+
+\end{otherlanguage}
 
 \vspace*{-2mm}
 \section{\faLanguage~Langues}
@@ -96,25 +102,24 @@
   \begin{multicols}{3}
     \centering{\textbf{Environnement\\}}
     \vspace*{2mm}
-    \centering{Linux~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
-        \centering{iOS/OS X~\textsc{\faStar~\faStar~\faStar~\faStar~\faStarO}}\\
-    \centering{Windows~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
+    \centering{Linux~~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
+        \centering{iOS/OS X~~\textsc{\faStar~\faStar~\faStar~\faStar~\faStarO}}\\
+    \centering{Windows~~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
     \columnbreak
     \centering{\textbf{Langages \\}}
     \vspace*{2mm}
-    \centering{Swift~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
-    \centering{Java/C~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
-    \centering{PHP/SQL~\textsc{\faStar~\faStar~\faStar}}\\
+    \centering{Swift~~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
+    \centering{Java/C~~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
+    \centering{PHP/SQL~~\textsc{\faStar~\faStar~\faStar}}\\
     \columnbreak
     \centering{\textbf{Outils \\}}
     \vspace*{2mm}
-    \centering{UML~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
-    \centering{Git~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
+    \centering{UML~~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}\\}
+    \centering{Git~~\textsc{\faStar~\faStar~\faStar~\faStarHalfO~\faStarO}\\}
     \centering{\LaTeX~\textsc{\faStar~\faStar~\faStar~\faStarO~\faStarO}}\\
   \end{multicols}
 \end{minipage}
 
 \section{\faEmpire~Autres}
-
 
 \end{document}
