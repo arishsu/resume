@@ -7,6 +7,5 @@ You can [see](https://github.com/gaelfoppolo/resume/blob/master/cv_en.pdf) or [d
 
 ## Todo
 
-* add english version
 * add makefile
 * cleaning and refactoring into a .cls to allow easy customization
