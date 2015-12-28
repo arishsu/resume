@@ -22,8 +22,9 @@
   \addcontentsline{toc}{section}{#2}%
   \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{\hintscolumnthickness}}}%
   \hspace{\separatorcolumnwidth}%
-  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}}%
-  \par\nobreak\addvspace{1ex}\@afterheading}
+  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}\hspace{\separatorcolumnwidth}%
+    \strut\raisebox{\baseletterheight}{\color{color1}\rule{\maincolumnwidth-\widthof{\sectionstyle{#2}}-\separatorcolumnwidth}{\hintscolumnthickness}}}%
+  \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
 \makeatother
 
 % Configure page margins with geometry
@@ -67,6 +68,8 @@
 \tldatecventry{2015}{Stage - Développeur iOS \faApple}{KeepCore}{Montpellier}{\url{www.keepcore.com}}{L'application \textit{HandiCarParking} a pour objectif de localiser rapidement les places de stationnement réservées aux personnes handicapées dans le monde entier. Elle se base sur les données d'\textit{OpenStreetMap}. L'application est disponible en plusieurs langues, gratuitement sur l'App Store.
 \newline{\url{https://itunes.apple.com/fr/app/id986777305}}}
 
+\vspace*{-2mm}
+
 \section{\faGavel~Réalisations}
 
 \tldatecventry{2014}{Pierre Feuille Ciseaux Lézard Spock \faHandRockO~\faHandPaperO~\faHandScissorsO~\faHandLizardO~\faHandSpockO}{Institut Universitaire de Technologie}{Montpellier}{\url{www.gaelfoppolo.com/projets/pfcls}}{Le projet s’appuie sur le jeu non coopératif \textit{Pierre Feuille Ciseaux Lézard Spock} en y associant l’âge et le sexe du joueur de façon à mettre en lumière des corrélations cachées dans les données ou des tendances de jeu générales. Nous proposons d’extraire des motifs de la forme : \textit{\og après avoir joué la figure A suivi de la figure B, les hommes ayant entre 18 et 22 ans ont tendance à jouer la figure C\fg}.
@@ -94,7 +97,7 @@
 \vspace*{-2mm}
 \section{\faLanguage~Langues}
 
-\vspace*{-3mm}
+\vspace*{-1mm}
 \hspace*{\fill}
 \begin{minipage}{\maincolumnwidth}
   \begin{multicols}{2}
@@ -109,6 +112,8 @@
     \centering{\textit{TOEIC -- 935}}\\
   \end{multicols}
 \end{minipage}
+
+\vspace*{-2mm}
 
 \section{\faGears~Compétences}
 
@@ -144,7 +149,7 @@
       \node [draw, thick, circle, minimum width=10pt] {\tikzpictext};
     },
   }
-%\hspace*{\fill}
+\hspace*{1mm}
 \begin{minipage}{\maincolumnwidth}
   \begin{tikzpicture}
   	\pic [pic text={\huge \faCoffee}] {cercle};

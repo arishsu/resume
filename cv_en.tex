@@ -22,8 +22,9 @@
   \addcontentsline{toc}{section}{#2}%
   \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{\hintscolumnthickness}}}%
   \hspace{\separatorcolumnwidth}%
-  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}}%
-  \par\nobreak\addvspace{1ex}\@afterheading}
+  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}\hspace{\separatorcolumnwidth}%
+    \strut\raisebox{\baseletterheight}{\color{color1}\rule{\maincolumnwidth-\widthof{\sectionstyle{#2}}-\separatorcolumnwidth}{\hintscolumnthickness}}}%
+  \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
 \makeatother
 
 % Configure page margins with geometry
@@ -67,6 +68,8 @@
 \tldatecventry{2015}{Internship - iOS developer \faApple}{KeepCore}{Montpellier}{\url{www.keepcore.com}}{The \textit{HandiCarParking} application aims to quickly locate parking spaces reserved to disabled person all over the world.  It's based on the \textit{OpenStreetMap} data. The app is available in several languages, for free on the App Store.
 \newline{\url{https://itunes.apple.com/us/app/id986777305}}}
 
+\vspace*{-2mm}
+
 \section{\faGavel~Projects}
 
 \tldatecventry{2014}{Rock Paper Scissors Lizard Spock \faHandRockO~\faHandPaperO~\faHandScissorsO~\faHandLizardO~\faHandSpockO}{University Institute of Technology}{Montpellier}{\url{www.gaelfoppolo.com/projets/pfcls}}{Our project is based on the non-cooperative game \textit{Rock Paper Scissors Lizard Spock} by associating the age and sex of the player in order to bring to light the hidden correlations in the data or general gaming trends. We propose to extract patterns of the form: \textit{`` after playing figure A followed by figure B, men aged between 18 and 22 years tend to play figure C ''}.
@@ -90,7 +93,7 @@
 \vspace*{-2mm}
 \section{\faLanguage~Languages}
 
-\vspace*{-3mm}
+\vspace*{-1mm}
 \hspace*{\fill}
 \begin{minipage}{\maincolumnwidth}
   \begin{multicols}{2}
@@ -105,6 +108,8 @@
     \centering{\textit{TOEIC -- 935}}\\
   \end{multicols}
 \end{minipage}
+
+\vspace*{-2mm}
 
 \section{\faGears~Skills}
 
@@ -140,7 +145,7 @@
       \node [draw, thick, circle, minimum width=10pt] {\tikzpictext};
     },
   }
-%\hspace*{\fill}
+\hspace*{1mm}
 \begin{minipage}{\maincolumnwidth}
   \begin{tikzpicture}
   	\pic [pic text={\huge \faCoffee}] {cercle};
