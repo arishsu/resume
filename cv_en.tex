@@ -14,16 +14,25 @@
 
 % Thick section line
 \makeatletter
+% define column thickness
 \newlength{\hintscolumnthickness}
 \setlength{\hintscolumnthickness}{3pt}
+% define column width
+\newlength{\sidecolumnwidth}
 \RenewDocumentCommand{\section}{sm}{%
+% set column width (need to do this because title lenght is different each time)
+\setlength{\sidecolumnwidth}{(\linewidth-\widthof{\sectionstyle{#2}}-\separatorcolumnwidth-\separatorcolumnwidth)/2}
   \par\addvspace{2.5ex}%
   \phantomsection{}% reset the anchor for hyperrefs
   \addcontentsline{toc}{section}{#2}%
-  \parbox[t]{\hintscolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\hintscolumnwidth}{\hintscolumnthickness}}}%
+  % left
+  \parbox[t]{\sidecolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\sidecolumnwidth}{\hintscolumnthickness}}}%
+  % title
   \hspace{\separatorcolumnwidth}%
-  \parbox[t]{\maincolumnwidth}{\strut\sectionstyle{#2}\hspace{\separatorcolumnwidth}%
-    \strut\raisebox{\baseletterheight}{\color{color1}\rule{\maincolumnwidth-\widthof{\sectionstyle{#2}}-\separatorcolumnwidth}{\hintscolumnthickness}}}%
+  \sectionstyle{#2}%
+  \hspace{\separatorcolumnwidth}%
+  % right
+  \parbox[t]{\sidecolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\sidecolumnwidth}{\hintscolumnthickness}}}%
   \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
 \makeatother
 
