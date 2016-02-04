@@ -5,6 +5,10 @@ Available under **GNU GPLv3**, see [LICENCE.md](https://github.com/gaelfoppolo/r
 
 You can [see](https://github.com/gaelfoppolo/resume/blob/master/cv_en.pdf) or [download](https://github.com/gaelfoppolo/resume/raw/master/cv_en.pdf) PDF.
 
+## How to
+
+Run `xelatex cv_en.tex` in your terminal.
+
 ## Todo
 
 * add makefile
