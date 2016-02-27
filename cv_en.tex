@@ -37,7 +37,7 @@
 \makeatother
 
 % Configure page margins with geometry
-\geometry{left=1.5cm, top=0.75cm, right=1.5cm, bottom=0.75cm, footskip=.5cm}
+\geometry{left=1.5cm, top=1.25cm, right=1.5cm, bottom=0.75cm, footskip=.5cm}
 
 % Configure column width for timelines
 \setlength{\hintscolumnwidth}{2cm}
@@ -48,23 +48,23 @@
 \tlwidth{0.8ex}
 
 % custom fonts for header 
-\renewcommand*{\namefont}{\fontsize{45}{45}\mdseries\upshape}
-\renewcommand*{\titlefont}{\fontsize{17}{20}\mdseries\upshape}
+\renewcommand*{\namefont}{\fontsize{55}{45}\mdseries\upshape}
+\renewcommand*{\titlefont}{\fontsize{23}{20}\mdseries\upshape}
 \renewcommand*{\addressfont}{\fontsize{10}{12}\mdseries\itshape}
 
 % infos
 \firstname{Gaël}
 \familyname{Foppolo}  
-\title{Engineering student in computer science}         
-\address{}{\faHome~Montpellier -- France}   
+\title{Engineering student in Computer Science}         
+\address{}{\faHome~Marseille -- France}   
 \email{me@gaelfoppolo.com}                      
 \homepage{www.gaelfoppolo.com}
 \mobile{+33 6 28 91 02 66}
 \social[github]{gaelfoppolo}
 \social[linkedin]{gaelfoppolo} 
-\social[twitter]{gaelugio} 
-\extrainfo{20 yo -- Driving licence}
-\photo[95pt][0pt]{ressources/avatar_nobg}	
+%\social[twitter]{gaelugio} 
+\extrainfo{Driving license}
+%\photo[95pt][0pt]{ressources/avatar_nobg}	
 
 \begin{document}
 
@@ -72,38 +72,39 @@
 
 \vspace*{-7mm}
 
+\section{\faGraduationCap~Education}
+
+\tlcventry{2015}{0}
+{Engineering school in Computer Science}{Polytech}{Marseille}{France}{}
+
+\tlcventry{2013}{2015}
+{Associate's degree in computer science}{University Institute of Technology}{Montpellier}{France}{}
+
+\vspace*{-2mm}
+
 \section{\faBriefcase~Experience}
 
-\tldatecventry{2015}{Internship - iOS developer \faApple}{KeepCore}{Montpellier}{\url{www.keepcore.com}}{The \textit{HandiCarParking} application aims to quickly locate parking spaces reserved to disabled people all over the world. It’s based on the \textit{OpenStreetMap} data. Available in several languages, for free on the App Store.
-\newline{\url{https://itunes.apple.com/us/app/id986777305}}}
+\tldatecventry{2015}{Internship - iOS developer \faApple}{KeepCore}{Montpellier, France}{\url{www.keepcore.com}}{The \textit{HandiCarParking} application aims to quickly locate parking spaces reserved to disabled people all over the world. It’s based on the \textit{OpenStreetMap} data. Available in several languages, for free on the App Store.\newline{\url{https://itunes.apple.com/us/app/id986777305}}}
 
 \vspace*{-2mm}
 
 \section{\faGavel~Projects}
 
-\tldatecventry{2014}{Rock Paper Scissors Lizard Spock \faHandRockO~\faHandPaperO~\faHandScissorsO~\faHandLizardO~\faHandSpockO}{University Institute of Technology}{Montpellier}{\url{www.gaelfoppolo.com/projets/pfcls}}{Our project is based on the non-cooperative game \textit{Rock Paper Scissors Lizard Spock} by associating the age and sex of the player in order to bring to light the hidden correlations in the data or general gaming trends. We propose to extract patterns of the form: \textit{`` after playing figure A followed by figure B, men aged between 18 and 22 years tend to play figure C ''}.
+\tldatecventry{2014}{Rock Paper Scissors Lizard Spock \faHandRockO~\faHandPaperO~\faHandScissorsO~\faHandLizardO~\faHandSpockO}{University Institute of Technology}{Montpellier, France}{\url{www.gaelfoppolo.com/projets/pfcls}}{The project is based on the non-cooperative game \textit{Rock Paper Scissors Lizard Spock} by associating the age and sex of the player in order to bring to light the hidden correlations in the data or general gaming trends. We propose to extract patterns of the form: \textit{`` after playing figure A followed by figure B, men aged between 18 and 22 years tend to play figure C ''}.
 \newline{}}
 
 \vspace*{-1mm}
 
-\tldatecventry{2014}{SporkADE - University planning}{}{}{\url{www.sporkade.gaelfoppolo.com}}{Creation of a website that converts university planning from ADE, the management app of university planning, to a ICS format. It allows exportation on a calendar software and a synchronization on smartphones.}
+\tldatecventry{2014}{SporkADE - University planning}{}{}{\url{www.sporkade.gaelfoppolo.com}}{Website that converts university planning from ADE, the management app of university planning, to an ICS format. It allows exportation on a calendar software and a synchronization on smartphones.}
 
 \vspace*{-1mm}
 
-\section{\faGraduationCap~Education}
-
-\tlcventry{2015}{0}
-{Computer science engineer}{Polytech}{Marseille}{}{}
-
-\tlcventry{2013}{2015}
-{Two-year degree in computer science}{University Institute of Technology}{Montpellier}{}{}
-
-\vspace*{-2mm}
 \section{\faNewspaperO~Publication}
 
 \tldatecventry{2015}{Contextual Sequential Pattern Mining in Games: Rock, Paper, Scissors, Lizard, Spock}{Dumartinet, J., Foppolo, G., Forthoffer, L., Marais, P., Croitoru, M., \& Rabatel, J.}{Research and Development in Intelligent Systems XXXII (pp. 375-380)}{Springer International Publishing}{}
 
 \vspace*{-2mm}
+
 \section{\faLanguage~Languages}
 
 \vspace*{-1mm}
@@ -111,12 +112,12 @@
   \begin{multicols}{2}
     \centering{\textbf{French\\}}
     \vspace*{2mm}
-    \centering{\faStar~\faStar~\faStar~\faStar~\faStarHalfO\\}
+    \centering{\faStar~\faStar~\faStar~\faStar~\faStarO\\}
     \centering{\textit{Projet Voltaire -- 80\%}}\\
     \columnbreak
     \centering{\textbf{English\\}}
     \vspace*{2mm}
-    \centering{\faStar~\faStar~\faStar~\faStar~\faStarO\\}
+    \centering{\faStar~\faStar~\faStar~\faStar~\faStarHalfO\\}
     \centering{\textit{TOEIC -- 935}}\\
   \end{multicols}
 \end{minipage}
@@ -162,24 +163,25 @@
 \hspace*{1mm}
 \begin{minipage}{\linewidth}
   \begin{tikzpicture}
-  	\pic [pic text={\huge \faCoffee}] {cercle};
-    \node[draw=none] at (0,-1.1) {Coffee};
-    \pic [pic text={\huge \faTelevision}] at (20mm,0) {cercle};
-    \node[draw=none] at (2,-1.1) {TV series};
-    \pic [pic text={\huge \faHeadphones}] at (40mm,0) {cercle};
-    \node[draw=none] at (4,-1.1) {Music};
+  	\hspace*{20mm}
+  	\pic [pic text={\huge \faCoffee}] at (20mm,0) {cercle};
+    \node[draw=none] at (2,-1.1) {Coffee};
+    \pic [pic text={\huge \faTelevision}] at (40mm,0) {cercle};
+    \node[draw=none] at (4,-1.1) {TV series};
     \pic [pic text={\huge \faLeaf}] at (60mm,0) {cercle};
     \node[draw=none] at (6,-1.1) {Gardening};
-    \pic [pic text={\huge \faApple}] at (80mm,0) {cercle};
-    \node[draw=none] at (8,-1.1) {Apple};
+    \pic [pic text={\huge \faHeadphones}] at (80mm,0) {cercle};
+    \node[draw=none] at (8,-1.1) {Music};    
     \pic [pic text={\huge \faGamepad}] at (100mm,0) {cercle};
-    \node[draw=none] at (10,-1.1) {Video games};
-    \pic [pic text={\huge \faFirefox}] at (120mm,0) {cercle};
-    \node[draw=none] at (12,-1.1) {Firefox};
-    \pic [pic text={\huge \faMoonO}] at (140mm,0) {cercle};
-    \node[draw=none] at (14,-1.1) {Night};
-    \pic [pic text={\huge \faGithub}] at (160mm,0) {cercle};
-    \node[draw=none] at (16,-1.1) {Open source};
+    \node[draw=none] at (10,-1.1) {Indie games};
+    \pic [pic text={\huge \faApple}] at (120mm,0) {cercle};
+    \node[draw=none] at (12,-1.1) {Apple};
+    %\pic [pic text={\huge \faFirefox}] at (120mm,0) {cercle};
+    %\node[draw=none] at (12,-1.1) {Firefox};
+    %\pic [pic text={\huge \faMoonO}] at (140mm,0) {cercle};
+    %\node[draw=none] at (14,-1.1) {Night};
+    \pic [pic text={\huge \faGithub}] at (140mm,0) {cercle};
+    \node[draw=none] at (14,-1.1) {Open source};
   \end{tikzpicture}
 \end{minipage}
 
