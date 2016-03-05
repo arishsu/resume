@@ -3,13 +3,15 @@ Here my LaTEX resume, based on modercv template.
 
 Available under **GNU GPLv3**, see [LICENCE.md](https://github.com/gaelfoppolo/resume/blob/master/LICENCE.md)
 
-You can [see](https://github.com/gaelfoppolo/resume/blob/master/cv_en.pdf) or [download](https://github.com/gaelfoppolo/resume/raw/master/cv_en.pdf) PDF.
+You can [see](https://github.com/gaelfoppolo/resume/blob/master/resume_en.pdf) or [download](https://github.com/gaelfoppolo/resume/raw/master/resume_en.pdf) PDF.
 
 ## How to
 
-Run `xelatex cv_en.tex` in your terminal.
+Run `xelatex file_name.tex` in your terminal.
 
 ## Todo
 
-* add makefile
-* cleaning and refactoring into a .cls to allow easy customization
+* cleaning and refactoring into a .cls
+* add parameters to allow easy customization
+* add how to edit
+* add img to README
