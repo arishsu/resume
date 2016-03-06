@@ -7,11 +7,12 @@ You can [see](https://github.com/gaelfoppolo/resume/blob/master/resume_en.pdf) o
 
 ## How to
 
-Run `xelatex file_name.tex` in your terminal.
+Run `make` in your terminal to produce PDFs
+Run `make clean` in your terminal to clean PDFs & temp
 
 ## Todo
 
-* cleaning and refactoring into a .cls
+* cleaning and refactoring into a .cls (in progress)
 * add parameters to allow easy customization
 * add how to edit
 * add img to README
