@@ -1,56 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-
-\moderncvtheme[blue]{classic}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-% last language in the list is the one used in the document
-\usepackage[english]{babel}
-\usepackage{geometry}
-\usepackage{moderntimeline}
-\usepackage{multicol}
-\usepackage{fontawesome}
-\moderncvicons{awesome}
-\usepackage{tikz}
-
-% Thick section line
-\makeatletter
-% define column thickness
-\newlength{\hintscolumnthickness}
-\setlength{\hintscolumnthickness}{3pt}
-% define column width
-\newlength{\sidecolumnwidth}
-\RenewDocumentCommand{\section}{sm}{%
-% set column width (need to do this because title lenght is different each time)
-\setlength{\sidecolumnwidth}{(\linewidth-\widthof{\sectionstyle{#2}}-\separatorcolumnwidth-\separatorcolumnwidth)/2}
-  \par\addvspace{2.5ex}%
-  \phantomsection{}% reset the anchor for hyperrefs
-  \addcontentsline{toc}{section}{#2}%
-  % left
-  \parbox[t]{\sidecolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\sidecolumnwidth}{\hintscolumnthickness}}}%
-  % title
-  \hspace{\separatorcolumnwidth}%
-  \sectionstyle{#2}%
-  \hspace{\separatorcolumnwidth}%
-  % right
-  \parbox[t]{\sidecolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\sidecolumnwidth}{\hintscolumnthickness}}}%
-  \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
-\makeatother
-
-% Configure page margins with geometry
-\geometry{left=1.5cm, top=1.25cm, right=1.5cm, bottom=0.75cm, footskip=.5cm}
-
-% Configure column width for timelines
-\setlength{\hintscolumnwidth}{2cm}
-
-% time interval for resume entries
-\tlmaxdates{2010}{2017}
-% width of the timeline 
-\tlwidth{0.8ex}
-
-% custom fonts for header 
-\renewcommand*{\namefont}{\fontsize{55}{45}\mdseries\upshape}
-\renewcommand*{\titlefont}{\fontsize{23}{20}\mdseries\upshape}
-\renewcommand*{\addressfont}{\fontsize{10}{12}\mdseries\itshape}
+\documentclass[languages=english]{resume_cover_letter}
 
 % infos
 \firstname{Gaël}
@@ -62,15 +10,26 @@
 \mobile{+33 6 28 91 02 66}
 \social[github]{gaelfoppolo}
 \social[linkedin]{gaelfoppolo} 
-%\social[twitter]{gaelugio} 
+\social[twitter]{gaelugio} 
 \extrainfo{Driving license}
-%\photo[95pt][0pt]{ressources/avatar_nobg}	
+\photo[95pt][0pt]{img/photo}	
 
 \begin{document}
 
 \maketitle
 
-\vspace*{-7mm}
+\vspace*{-8mm}
+
+\section{\faBriefcase~Experience}
+
+\tldatecventry{2015}{Internship - iOS developer \faApple}{KeepCore}{Montpellier, France}{\url{www.keepcore.com}}{The \textit{HandiCarParking} application aims to quickly locate parking spaces reserved to disabled people all over the world. It’s based on the \textit{OpenStreetMap} data. Available in several languages, for free on the App Store.\newline{\url{https://itunes.apple.com/us/app/id986777305}}}
+
+\section{\faGavel~Projects}
+
+\tldatecventry{2014}{Rock Paper Scissors Lizard Spock \faHandRockO~\faHandPaperO~\faHandScissorsO~\faHandLizardO~\faHandSpockO}{University Institute of Technology}{Montpellier, France}{\url{www.gaelfoppolo.com/projets/pfcls}}{The project is based on the non-cooperative game \textit{Rock Paper Scissors Lizard Spock} by associating the age and sex of the player in order to bring to light the hidden correlations in the data or general gaming trends. The application propose to extract patterns of the form: \textit{`` after playing figure A followed by figure B, men aged between 18 and 22 years tend to play figure C ''}.
+\newline{}}
+
+\tldatecventry{2016}{Supervised learning}{Polytech}{Marseille}{\url{github.com/gaelfoppolo/examples-learning}}{This project aims to find similarities in a set of formatted data and propose one or more characteristic(s) description(s) that carry the most information. The application produce solutions of the form: \textit{``a red square of size 8 is on a blue or green triangle of size 5, itself next-to a red circle of size 2 to 4''}.}
 
 \section{\faGraduationCap~Education}
 
@@ -78,32 +37,11 @@
 {Engineering school in Computer Science}{Polytech}{Marseille}{France}{}
 
 \tlcventry{2013}{2015}
-{Associate's degree in computer science}{University Institute of Technology}{Montpellier}{France}{}
-
-\vspace*{-2mm}
-
-\section{\faBriefcase~Experience}
-
-\tldatecventry{2015}{Internship - iOS developer \faApple}{KeepCore}{Montpellier, France}{\url{www.keepcore.com}}{The \textit{HandiCarParking} application aims to quickly locate parking spaces reserved to disabled people all over the world. It’s based on the \textit{OpenStreetMap} data. Available in several languages, for free on the App Store.\newline{\url{https://itunes.apple.com/us/app/id986777305}}}
-
-\vspace*{-2mm}
-
-\section{\faGavel~Projects}
-
-\tldatecventry{2014}{Rock Paper Scissors Lizard Spock \faHandRockO~\faHandPaperO~\faHandScissorsO~\faHandLizardO~\faHandSpockO}{University Institute of Technology}{Montpellier, France}{\url{www.gaelfoppolo.com/projets/pfcls}}{The project is based on the non-cooperative game \textit{Rock Paper Scissors Lizard Spock} by associating the age and sex of the player in order to bring to light the hidden correlations in the data or general gaming trends. We propose to extract patterns of the form: \textit{`` after playing figure A followed by figure B, men aged between 18 and 22 years tend to play figure C ''}.
-\newline{}}
-
-\vspace*{-1mm}
-
-\tldatecventry{2014}{SporkADE - University planning}{}{}{\url{www.sporkade.gaelfoppolo.com}}{Website that converts university planning from ADE, the management app of university planning, to an ICS format. It allows exportation on a calendar software and a synchronization on smartphones.}
-
-\vspace*{-1mm}
+{Associate's degree in Computer Science}{University Institute of Technology}{Montpellier}{France}{}
 
 \section{\faNewspaperO~Publication}
 
 \tldatecventry{2015}{Contextual Sequential Pattern Mining in Games: Rock, Paper, Scissors, Lizard, Spock}{Dumartinet, J., Foppolo, G., Forthoffer, L., Marais, P., Croitoru, M., \& Rabatel, J.}{Research and Development in Intelligent Systems XXXII (pp. 375-380)}{Springer International Publishing}{}
-
-\vspace*{-2mm}
 
 \section{\faLanguage~Languages}
 
@@ -121,8 +59,6 @@
     \centering{\textit{TOEIC -- 935}}\\
   \end{multicols}
 \end{minipage}
-
-\vspace*{-2mm}
 
 \section{\faGears~Skills}
 
@@ -151,9 +87,9 @@
   \end{multicols}
 \end{minipage}
 
-\section{\faBeer~Miscellaneous}
+\vspace*{2mm}
 
-\vspace*{1mm}
+\section{\faBeer~Miscellaneous}
 
 \tikzset{
     cercle/.pic={
@@ -163,25 +99,25 @@
 \hspace*{1mm}
 \begin{minipage}{\linewidth}
   \begin{tikzpicture}
-  	\hspace*{20mm}
-  	\pic [pic text={\huge \faCoffee}] at (20mm,0) {cercle};
-    \node[draw=none] at (2,-1.1) {Coffee};
-    \pic [pic text={\huge \faTelevision}] at (40mm,0) {cercle};
-    \node[draw=none] at (4,-1.1) {TV series};
+%  	\hspace*{20mm}
+  	\pic [pic text={\huge \faCoffee}] {cercle};
+    \node[draw=none] at (0,-1.1) {Coffee};
+    \pic [pic text={\huge \faTelevision}] at (20mm,0) {cercle};
+    \node[draw=none] at (2,-1.1) {TV series};
+    \pic [pic text={\huge \faHeadphones}] at (40mm,0) {cercle};
+    \node[draw=none] at (4,-1.1) {Music}; 
     \pic [pic text={\huge \faLeaf}] at (60mm,0) {cercle};
-    \node[draw=none] at (6,-1.1) {Gardening};
-    \pic [pic text={\huge \faHeadphones}] at (80mm,0) {cercle};
-    \node[draw=none] at (8,-1.1) {Music};    
+    \node[draw=none] at (6,-1.1) {Gardening};   
+    \pic [pic text={\huge \faApple}] at (80mm,0) {cercle};
+    \node[draw=none] at (8,-1.1) {Apple};
     \pic [pic text={\huge \faGamepad}] at (100mm,0) {cercle};
     \node[draw=none] at (10,-1.1) {Indie games};
-    \pic [pic text={\huge \faApple}] at (120mm,0) {cercle};
-    \node[draw=none] at (12,-1.1) {Apple};
-    %\pic [pic text={\huge \faFirefox}] at (120mm,0) {cercle};
-    %\node[draw=none] at (12,-1.1) {Firefox};
-    %\pic [pic text={\huge \faMoonO}] at (140mm,0) {cercle};
-    %\node[draw=none] at (14,-1.1) {Night};
-    \pic [pic text={\huge \faGithub}] at (140mm,0) {cercle};
-    \node[draw=none] at (14,-1.1) {Open source};
+    \pic [pic text={\huge \faFirefox}] at (120mm,0) {cercle};
+    \node[draw=none] at (12,-1.1) {Firefox};
+    \pic [pic text={\huge \faMoonO}] at (140mm,0) {cercle};
+    \node[draw=none] at (14,-1.1) {Night};
+    \pic [pic text={\huge \faGithub}] at (160mm,0) {cercle};
+    \node[draw=none] at (16,-1.1) {Open source};
   \end{tikzpicture}
 \end{minipage}
 

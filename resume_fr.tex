@@ -1,56 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
-
-\moderncvtheme[blue]{classic}
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-% last language in the list is the one used in the document
-\usepackage[english,francais]{babel}
-\usepackage{geometry}
-\usepackage{moderntimeline}
-\usepackage{multicol}
-\usepackage{fontawesome}
-\moderncvicons{awesome}
-\usepackage{tikz}
-
-% Thick section line
-\makeatletter
-% define column thickness
-\newlength{\hintscolumnthickness}
-\setlength{\hintscolumnthickness}{3pt}
-% define column width
-\newlength{\sidecolumnwidth}
-\RenewDocumentCommand{\section}{sm}{%
-% set column width (need to do this because title lenght is different each time)
-\setlength{\sidecolumnwidth}{(\linewidth-\widthof{\sectionstyle{#2}}-\separatorcolumnwidth-\separatorcolumnwidth)/2}
-  \par\addvspace{2.5ex}%
-  \phantomsection{}% reset the anchor for hyperrefs
-  \addcontentsline{toc}{section}{#2}%
-  % left
-  \parbox[t]{\sidecolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\sidecolumnwidth}{\hintscolumnthickness}}}%
-  % title
-  \hspace{\separatorcolumnwidth}%
-  \sectionstyle{#2}%
-  \hspace{\separatorcolumnwidth}%
-  % right
-  \parbox[t]{\sidecolumnwidth}{\strut\raggedleft\raisebox{\baseletterheight}{\color{color1}\rule{\sidecolumnwidth}{\hintscolumnthickness}}}%
-  \par\nobreak\addvspace{1ex}\@afterheading}% to avoid a pagebreak after the heading
-\makeatother
-
-% Configure page margins with geometry
-\geometry{left=1.5cm, top=0.75cm, right=1.5cm, bottom=0.75cm, footskip=.5cm}
-
-% Configure column width for timelines
-\setlength{\hintscolumnwidth}{2cm}
-
-% time interval for resume entries
-\tlmaxdates{2010}{2017}
-% width of the timeline 
-\tlwidth{0.8ex}
-
-% custom fonts for header 
-\renewcommand*{\namefont}{\fontsize{45}{45}\mdseries\upshape}
-\renewcommand*{\titlefont}{\fontsize{20}{25}\mdseries\upshape}
-\renewcommand*{\addressfont}{\fontsize{10}{12}\mdseries\itshape}
+\documentclass[languages=english,francais]{resume_cover_letter}
 
 % infos
 \firstname{Gaël}
@@ -64,7 +12,7 @@
 \social[linkedin]{gaelfoppolo} 
 \social[twitter]{gaelugio} 
 \extrainfo{Permis B}
-\photo[95pt][0pt]{ressources/avatar_nobg}	
+\photo[95pt][0pt]{img/photo}	
 
 \begin{document}
 
