@@ -36,7 +36,7 @@
 \setlength{\hintscolumnwidth}{2cm}
 
 % Time interval for resume entries
-\tlmaxdates{2010}{2017}
+\tlmaxdates{2010}{2018}
 
 % Width of the timeline 
 \tlwidth{0.8ex}
